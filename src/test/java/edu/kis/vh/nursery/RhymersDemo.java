@@ -3,8 +3,15 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
+/**
+ * Demo showing usage of Rhymer classes
+ */
 class RhymersDemo {
 
+	/**
+	 * @param args
+	 * create rhymer factory and pass it to testRhymers function
+	 */
 	public static void main(String[] args) {
 		RhymersFactory factory = new DefaultRhymersFactory();
 
@@ -12,6 +19,10 @@ class RhymersDemo {
 
 	}
 
+	/**
+	 * @param factory
+	 * shows example usage of rhymer classes
+	 */
 	private static void testRhymers(RhymersFactory factory) {
 		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
 				factory.getFIFORhymer(), factory.getHanoiRhymer()};
